@@ -1,0 +1,244 @@
+/* main page "Acasa"*/
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('main\ background.jpg'); 
+    background-size: cover;
+    background-attachment: fixed; /* fixed the background image  */
+}
+/* transparency of the page */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* adjust the transparency of the image */
+    pointer-events: none; /*  */
+    z-index: -1; /* place the layer below the content */
+}
+/* container of the navigation bar */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.navigation {
+    list-style-type: none;
+    margin: 20px 0; /* add space above and below the navigation */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+}
+
+ul.navigation li {
+    display: inline;
+    margin: 0 100px; /* add space between navigation links */
+}
+
+ul.navigation li a {
+    text-decoration: none; 
+    color:rgb(252, 192, 192);
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 25px;
+   
+}
+/* i added a navigation box and adjusted it*/
+.nav-box {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(14, 13, 13, 0.5);
+    border-radius: 10px;
+    margin: 5px;
+    color: rgb(252, 192, 192);
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+/*adjust the nav.box while clicking on it */
+.nav-box:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+/* title of all pages */
+h1 {
+    margin: 60px;
+    font-family: "Sofia", sans-serif;
+    font-size: 50px;
+    font-weight:bolder;
+    text-shadow: 6px 6px 3px rgb(253, 193, 193);
+    color:black;
+    
+}
+/*subtitle of all pages*/
+h2 {
+    margin: 60px;
+    font-family: "Brush Script MT", cursive;
+    font-size:90px;
+    color: rgb(253, 193, 193);
+    text-shadow: 6px 6px 4px #000000;
+
+}
+/* the body of all 3 pages */
+body.despre {
+    background-image: url('brushes.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+body.contact {
+    background-image: url(brushes\ in.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.portofoliu {
+    background-image:url(pale.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* images in "portofoliu" with all the adjustments */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+    gap: 20px; /* Adjust the gap between images */
+}
+
+.image-item {
+    text-align: center; /* Center the image and description */
+}
+
+.image-container img {
+    width: calc(50% - 2px); /* Increase the width for larger images */
+    margin: 15px; /* add some spacing between images */
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+    transform: scale(1); /* initial scale */
+}
+
+.image-container img.enlarged {
+    /* Keep the enlarged size the same as the original size */
+    width: calc(12.0% - 20px);
+    transform: scale(3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    border-radius: 0;
+    box-shadow: none;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) scale(4);
+}
+
+.image-description {
+    font-size: 20px; /* Adjust the font size as needed */
+    font-style: italic;
+    color:black;
+    max-width: 300px;
+
+}
+
+/* text at the bottom of the page in "portofoliu" */
+.images-description {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+
+/* style the text sections in "despre" page */
+.section {
+    flex: 1;
+    padding: 210px;
+    border: 6px solid #ccc;
+
+}
+
+/* adjust font size and line height for readability */
+.section h3 {
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.section p {
+    font-size: 25px;
+    line-height: 1.9;
+}
+
+/* apply a background color to the highlighted text in "despre" page and titles */
+.highlight {
+    background-color: rgba(236, 195, 241, 0.658); /* adjust the color and opacity as needed */
+    padding: 10px; /* add padding to make the highlight more visible */
+    display: inline; /* adjust display property as needed */
+}
+
+/*subtitles of "despre" page*/
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-details .fab.fa-facebook {
+    font-size: 36px;
+    color: #1877f2;
+    margin-top: 590px; 
+    text-align:left;
+    border: #4b4242;
+    background-color:white;
+}
+/*email and phone number adjutments*/
+.contact-sidebar {
+    color: rgb(252, 247, 247);
+    margin-left: 300px;
+ }
+ 
+ /* adjustment text in contact */
+.main-content {
+    width: 75%; /* Adjust the width of the main content area as needed */
+    padding: 20px;
+    background-color: rgba(19, 17, 17, 0.534);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: rgb(233, 217, 217);
+    position: absolute;
+    top: 200px;
+    right: 100px; 
+    width: 20%;
+    padding: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction:column;
+    font-style: italic;
+
+}
+.footer-highlight{
+    background-color: #00000096;
+    color: white;
+    margin-top: 350px;
+
+ }
