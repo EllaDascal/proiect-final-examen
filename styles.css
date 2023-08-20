@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
     background-image: url('main\ background.jpg'); 
     background-size: cover;
-    background-attachment: fixed; /* fixed the background image  */
+    background-attachment: fixed;
 }
 /* transparency of the page */
 body::before {
