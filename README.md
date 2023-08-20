@@ -4,4 +4,4 @@ Structura paginilor este una simpla pentru orice utilizator cu un meniu de navig
 Pentru dezvoltarea acestui website am folosit Visual Studio Code in care am adaugat ca limbajele de programare, HTML, CSS, JavaScript.
 Tot ce am folosit este din sursa proprie.
 Imaginile de fundal sunt salvari in memoria interna a calculatorului iar imaginile din portofoliu sunt picturi proprii.
-Acesta este repo-ul meu https://github.com/EllaDascal/proiect-final-examen.git
+Acesta este repo-ul meu https://github.com/EllaDascal/proiect-final-examen.git 
