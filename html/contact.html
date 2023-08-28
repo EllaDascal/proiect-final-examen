@@ -4,9 +4,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-   
+    <script src="../js/index.js" defer></script>
     <title>Contact</title>
 </head>
 <body class="contact"> 
@@ -21,7 +21,15 @@
         </header>
 
         <main>
-           
+            <button id="openFormButton">Părerea ta contează</button>
+
+            <!-- Cadru alb pentru formular (initial ascuns) -->
+            <div id="feedbackForm" class="hidden">
+                <form id="feedbackFormInner">
+                    <textarea id="feedbackText" rows="4" maxlength="400" placeholder="Scrie aici părerea ta despre picturi (maxim 100 de cuvinte)"></textarea>
+                    <button type="submit">Trimite</button>
+                </form>
+            </div>
             <div class="contact-details">
                 <div class="main-content">
                     
@@ -42,6 +50,7 @@
                         <p style="font-size: 24px; font-weight: bold;">Phone: 0748812305</p>
                         <p style="font-size: 24px; font-weight: bold;">Email: dascal.manuela@yahoo.com</p>
                     </div>
+                   
         </main>
     </div>
 </body>
