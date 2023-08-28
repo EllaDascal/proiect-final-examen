@@ -237,7 +237,7 @@ body.portofoliu {
 
 }
 
-/* Stilizare pentru formular */
+/* Styling for the form */
 #feedbackForm {
     background-color: white;
     top: 300px; /* Adjust the top position as needed */
@@ -251,12 +251,12 @@ body.portofoliu {
     
 }
 
-/* Ascunderea formularului la început */
+/*Hiding the form at the beginning */
 .hidden {
     display: none;
 }
 
-/* Stilizare pentru textul de feedback */
+/* Styling for the feedback text */
 #feedbackText {
     width: 100%;
     resize: none;
@@ -275,7 +275,7 @@ body.portofoliu {
 }
 
 
-/* Stilizare pentru butonul de trimitere */
+/* Styling for the submit button */
 #feedbackForm button {
     background-color:tomato;
     color: white;
@@ -308,11 +308,6 @@ body.portofoliu {
     background: linear-gradient(135deg, #6BFF6B, #FFD166, #FF6B6B); /* Gradient with blended colors on hover */
 }
 
-
- 
-    
-    
-   
 
 .footer-highlight{
     background-color: #00000096;
