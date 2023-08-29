@@ -10,11 +10,11 @@ class ImageItem {
       if (this.imageElement.classList.contains('enlarged')) {
         // If the image is already enlarged, remove the 'enlarged' class to shrink it
         this.imageElement.classList.remove('enlarged');
-        this.descriptionElement.style.display = 'none'; // Hide the description
+        this.descriptionElement.style.display = 'block'; // Hide the description
       } else {
         // If the image is not enlarged, add the 'enlarged' class to make it bigger
         this.imageElement.classList.add('enlarged');
-        this.descriptionElement.style.display = 'block'; // Show the description
+        this.descriptionElement.style.display = 'none'; // Show the description
       }
     }
   }
