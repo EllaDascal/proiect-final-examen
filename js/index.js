@@ -18,34 +18,44 @@ class ImageItem {
       }
     }
   }
-  
   document.addEventListener('DOMContentLoaded', function () {
     const imageItems = document.querySelectorAll('.image-container .image-item');
     imageItems.forEach(item => new ImageItem(item));
   });
   
-const openFormButton = document.getElementById("openFormButton");
-const feedbackForm = document.getElementById("feedbackForm");
-const feedbackFormInner = document.getElementById("feedbackFormInner");
-const feedbackText = document.getElementById("feedbackText");
 
-
-openFormButton.addEventListener("click", function () {
-   
-    feedbackForm.classList.remove("hidden");
-});
-
-
-feedbackFormInner.addEventListener("submit", function (event) {
-    event.preventDefault(); 
-    const userFeedback = feedbackText.value.trim();
-    if (userFeedback.length > 0 && userFeedback.split(' ').length <= 100) {
-       
-        alert("Feedback-ul dvs. a fost trimis cu succes!");
-        feedbackText.value = "";
-    } else {
-        alert("Vă rugăm să introduceți un feedback valid (maximum 100 de cuvinte).");
+  
+  class FeedbackForm {
+    constructor() {
+      this.openFormButton = document.getElementById("openFormButton");
+      this.feedbackForm = document.getElementById("feedbackForm");
+      this.feedbackFormInner = document.getElementById("feedbackFormInner");
+      this.feedbackText = document.getElementById("feedbackText");
+  
+      this.setupEventListeners();
     }
-});
-
+  
+    openForm() {
+      this.feedbackForm.classList.remove("hidden");
+    }
+  
+    handleSubmit(event) {
+      event.preventDefault();
+      const userFeedback = this.feedbackText.value.trim();
+      if (userFeedback.length > 0 && userFeedback.split(' ').length <= 100) {
+        alert("Feedback-ul dvs. a fost trimis cu succes!");
+        this.feedbackText.value = "";
+      } else {
+        alert("Vă rugăm să introduceți un feedback valid (maximum 100 de cuvinte).");
+      }
+    }
+  
+    setupEventListeners() {
+      this.openFormButton.addEventListener("click", () => this.openForm());
+      this.feedbackFormInner.addEventListener("submit", (event) => this.handleSubmit(event));
+    }
+  }
+  
+  const feedbackForm = new FeedbackForm();
+  
 
