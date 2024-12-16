@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* main page "Home"*/
+=======
+/* main page "Acasa"*/
+>>>>>>> f04f38bf5843dd22f737d9cef9026691099483f8
 body {
     margin: 0;
     padding: 0;
@@ -100,7 +104,11 @@ h2 {
 
 }
 /* the body of all 3 pages */
+<<<<<<< HEAD
 body.about {
+=======
+body.despre {
+>>>>>>> f04f38bf5843dd22f737d9cef9026691099483f8
     background-image: url('../background.img/brushes.jpg'); 
     background-size: cover;
     background-attachment: fixed;
@@ -111,7 +119,11 @@ body.contact {
     background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 body.portfolio {
+=======
+body.portofoliu {
+>>>>>>> f04f38bf5843dd22f737d9cef9026691099483f8
     background-image:url('../background.img/pale.webp');
     background-size: cover;
     background-attachment: fixed;
@@ -312,6 +324,10 @@ body.portfolio {
 .footer-highlight{
     background-color: #00000096;
     color: white;
+<<<<<<< HEAD
     margin-top:650px;
+=======
+    margin-top: 350px;
+>>>>>>> f04f38bf5843dd22f737d9cef9026691099483f8
 
  }
