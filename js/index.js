@@ -43,10 +43,10 @@ class ImageItem {
       event.preventDefault();
       const userFeedback = this.feedbackText.value.trim();
       if (userFeedback.length > 0 && userFeedback.split(' ').length <= 100) {
-        alert("Feedback-ul dvs. a fost trimis cu succes!");
+        alert("Your feedback has been successfully submitted!");
         this.feedbackText.value = "";
       } else {
-        alert("Vă rugăm să introduceți un feedback valid (maximum 100 de cuvinte).");
+        alert("Please enter valid feedback (maximum 100 words)");
       }
     }
   
